@@ -29,7 +29,7 @@ async def main():
     joe = ok.json()
     if "error" in joe:
         return print('sorry there is an error, rerun the code and try another airport')
-    print(f'lexd_metar.py\nSTATION: {icao.upper()}\nRAW REPORT: {joe["raw"]}\nTIME OF OBSERVATION: {joe["time"]["repr"]} ({joe["time"]["dt"]})\nWIND: {joe["wind_direction"]["value"]}°@{joe["wind_speed"]["value"]}{joe["units"]["wind_speed"]}\nDEWPOINT: {joe["dewpoint"]["value"]}\nTEMPERATURE: A{joe["temperature"]["value"]}')
+    print(f'lexd_metar.py\nSTATION: {icao.upper()}\nRAW REPORT: {joe["raw"]}\nTIME OF OBSERVATION: {joe["time"]["repr"]} ({joe["time"]["dt"]})\nWIND: {joe["wind_direction"]["value"]}°@{joe["wind_speed"]["value"]}{joe["units"]["wind_speed"]}\nDEWPOINT: {joe["dewpoint"]["value"]}\nTEMPERATURE: {joe["temperature"]["value"]}')
     results = [x['repr'] for x in joe['clouds']]
     x = 0
     new_results = []
