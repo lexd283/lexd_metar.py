@@ -1,7 +1,5 @@
 <div align="center">
-  <img src="https://i.imgur.com/o558Qnq.png" align="center">
-  <br>
-  <strong><i>A feature-rich Modmail bot for Discord.</i></strong>
+  <strong><i>lexd_metar.py</i></strong>
   <br>
   <br>
  </div>
